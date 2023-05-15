@@ -190,7 +190,7 @@
     margin: 20px;
     padding: 20px 0;
 
-    @include media("<tablet") {
+    @include media("<=tablet") {
         flex-direction: column;
         font-size: small;
         margin: 0;
@@ -201,6 +201,10 @@
         width: 30em;
         margin-right: 15px;
         transition: all 0.3s ease;
+
+        @include media("<=tablet") {
+            width: 23em;
+        }
 
         @include media("<tablet") {
             width: 13em;
@@ -263,7 +267,7 @@
 
     @include media("<=phone") {
         display: none;
-        position: absolute;
+
     }
 
 }
@@ -271,7 +275,7 @@
 .site-content-button {
     display: none;
 
-    @include media("<=tablet") {
+    @include media("<=phone") {
         display: block;
     }
 }
