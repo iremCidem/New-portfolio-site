@@ -127,8 +127,14 @@
     display: grid;
     grid-template-columns: 1fr 3fr;
     padding: 30px;
-    height: 350px;
+    min-height: 350px;
     align-items: center;
+
+    &-right {
+        @include media("<tablet") {
+            width: 100%;
+        }
+    }
 
     @include media("<tablet") {
         padding: 0;
@@ -138,11 +144,12 @@
     }
 
     &-flex {
-        display: flex;
-
-
         &>* {
             margin-right: 30px;
+
+            @include media("<=phone") {
+                padding-left: 15px;
+            }
         }
     }
 }
@@ -152,6 +159,11 @@
     background-color: $purple;
     color: $white;
     padding: 20px;
+
+    @include media("<=phone") {
+        padding: 5px;
+        margin-top: 30px;
+    }
 
     &-text {
         margin-bottom: 30px;
@@ -194,7 +206,6 @@
         flex-direction: column;
         font-size: small;
         margin: 0;
-
     }
 
     &-image {
@@ -206,9 +217,6 @@
             width: 23em;
         }
 
-        @include media("<tablet") {
-            width: 13em;
-        }
 
         &:hover {
             box-shadow: 5px 5px 10px rgb(82, 73, 73);

@@ -10,7 +10,7 @@ export default function Skills() {
           thoughtful interactions.
         </p>
       </div>
-      <div>
+      <div className="skills-right">
         <h2 className="header-2">New technologies</h2>
         <p>
           I started my education with HTML&CSS&JavaScript projects, which are
