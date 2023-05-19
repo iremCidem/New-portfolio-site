@@ -176,6 +176,14 @@
     font-size: 14px;
   }
 }
+.skills-flex {
+  display: flex;
+}
+@media (max-width: 420px) {
+  .skills-flex {
+    flex-direction: column;
+  }
+}
 .skills-flex > * {
   margin-right: 30px;
 }

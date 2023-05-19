@@ -144,6 +144,12 @@
     }
 
     &-flex {
+        display: flex;
+
+        @include media("<=phone") {
+            flex-direction: column;
+        }
+
         &>* {
             margin-right: 30px;
 
