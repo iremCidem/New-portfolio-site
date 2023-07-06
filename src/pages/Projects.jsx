@@ -3,6 +3,7 @@ import food from "../images/food.png";
 import movie from "../images/movie.png";
 import spotify from "../images/spotify.png";
 import Project from "../components/Project";
+import firebase from "../images/firebase.png";
 
 export default function Projects() {
   return (
