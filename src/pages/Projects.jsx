@@ -7,6 +7,15 @@ import Project from "../components/Project";
 export default function Projects() {
   return (
     <div>
+       <Project
+        className="Firebase e-Shop App"
+        image={firebase}
+        sitelink="https://lucky-stroopwafel-a3ee4c.netlify.app/"
+        title="Firebase e-shop App"
+        text1=" In this project, I created a user-specific field using firebase authentication. I colored the site by adding ads with the react-swipeable-views library. I kept my data in a global state using ContextApi. I edited my pages with pure css."
+        text2="On this site, you can shop with the account you have created for yourself. When you log out of your account and return, the products in your cart are protected."
+        codelink="https://github.com/iremCidem/e-shop-firebase"
+      />
       <Project
         className="projects"
         image={movie}
